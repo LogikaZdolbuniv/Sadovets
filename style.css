@@ -1,0 +1,490 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+.bod{
+    text-align: left;
+    color: rgb(255, 255, 255);
+    background: url(https://assets.newsweek.com/wp-content/uploads/2025/08/2555153-squid-game.png?w=1600&quality=80&webp=1);
+    text-shadow: #333 1px 1px 2px;
+}
+
+.mainhero{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.mainhero2{
+   background: #833AB4;
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+color: #fff9f9;
+}
+
+
+
+
+
+header {
+    background: #333;
+    color: #fdf4f4;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+h1 {
+    margin: 0; 
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #fab0b0;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+footer {
+    background: #a10a6f;
+    color: #cf0f7f;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.logo {
+    text-decoration: none;
+    color: #ffffff;
+    animation: pulseText 1.5s infinite;
+    margin-left: 20px;
+}
+
+@keyframes pulseText {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* From Uiverse.io by kamehame-ha */ 
+.cards {
+    display: grid;
+   grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+
+.cards .red {
+    background-color: #f43f5e;
+}
+
+.cards .blue {
+    background-color: #3b82f6;
+}
+
+.cards .green {
+    background-color: #22c55e;
+}
+
+.cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 300px;
+    width: 250px;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.cards .card img {
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 400ms;
+}
+
+.cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 5px;
+}
+
+.cards .card:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.cards .card:hover img {
+    transform: scale(1.05);
+}
+
+.cards:hover > .card:not(:hover) {
+    filter: blur(5px);
+    transform: scale(0.9, 0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* From Uiverse.io by G27XLEO */ 
+.heart #line {
+  fill: none;
+  stroke: #e00000;
+  stroke-width: 1.5;
+  stroke-linecap: butt;
+  stroke-linejoin: round;
+  stroke-miterlimit: 4;
+  stroke-opacity: 1;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: dash 3s linear infinite;
+}
+.heart #point {
+  fill: none;
+  stroke: #f00000;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 0.1;
+  stroke-opacity: 1;
+  stroke-dasharray: 0.0001, 0.9999;
+  stroke-dashoffset: 1;
+  animation: dash 3s linear infinite;
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1;
+  }
+  70% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&display=swap');
+
+/* Загальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #090909;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.squid {
+    width: 100%;
+    min-height: 80px;
+    background: linear-gradient(90deg, #111, #1d1d1d, #111);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 8%;
+    border-bottom: 2px solid #ff0f7b;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 0 20px rgba(255, 15, 123, 0.4);
+}
+
+/* Логотип */
+.logo {
+    color: #ff0f7b;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    color: #00ff9d;
+    text-shadow: 0 0 15px #00ff9d;
+}
+
+/* Меню */
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.nav a:hover {
+    background: #ff0f7b;
+    color: white;
+    box-shadow: 0 0 15px #ff0f7b;
+}
+
+/* ================= MAIN ================= */
+
+main {
+    min-height: 100vh;
+    padding: 60px 10%;
+    background:
+        radial-gradient(circle at top right, rgba(255, 15, 123, 0.15), transparent 30%),
+        radial-gradient(circle at bottom left, rgba(0, 255, 157, 0.1), transparent 30%),
+        #090909;
+}
+
+/* Блок інформації */
+.mainhero2 {
+    max-width: 1000px;
+    margin: auto;
+    background: rgba(25, 25, 25, 0.9);
+    padding: 45px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    box-shadow: 0 0 30px rgba(255, 15, 123, 0.2);
+}
+
+/* Заголовок */
+.mainhero2 h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 35px;
+    color: #ff0f7b;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(255, 15, 123, 0.7);
+}
+
+/* Абзаци */
+.mainhero2 p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #dddddd;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 3px solid #00ff9d;
+}
+
+/* ================= VIDEO ================= */
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 873px;
+    height: 490px;
+    margin: 50px auto;
+    border-radius: 20px;
+    border: 3px solid #ff0f7b;
+    box-shadow:
+        0 0 20px rgba(255, 15, 123, 0.5),
+        0 0 40px rgba(0, 255, 157, 0.2);
+}
+
+/* ================= АДАПТИВНІСТЬ ================= */
+
+@media (max-width: 768px) {
+
+    .squid {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav a {
+        font-size: 13px;
+    }
+
+    main {
+        padding: 30px 5%;
+    }
+
+    .mainhero2 {
+        padding: 25px;
+    }
+
+    .mainhero2 h1 {
+        font-size: 30px;
+    }
+
+    .mainhero2 p {
+        font-size: 16px;
+    }
+
+    iframe {
+        height: 280px;
+        margin: 30px auto;
+    }
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: url("squid.jpg") center center / cover fixed no-repeat;
+    color: white;
+}
+
+/* Затемнення фону, щоб текст було добре видно */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: -1;
+}
+
+/* Шапка */
+.squid {
+    width: 100%;
+    min-height: 80px;
+    background: rgba(10, 10, 10, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 8%;
+    box-sizing: border-box;
+    border-bottom: 2px solid #ff0f7b;
+}
+
+/* Логотип */
+.logo {
+    color: #ff0f7b;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Меню */
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    background: #ff0f7b;
+    box-shadow: 0 0 15px #ff0f7b;
+}
+
+/* Головна сторінка */
+.mainhero2 {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    border: 2px solid #ff0f7b;
+    box-shadow: 0 0 30px rgba(255, 15, 123, 0.4);
+}
+
+.mainhero2 h1 {
+    color: #ff0f7b;
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 0 0 15px #ff0f7b;
+}
+
+.mainhero2 p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
