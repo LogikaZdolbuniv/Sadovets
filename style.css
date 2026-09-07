@@ -286,10 +286,14 @@ body {
 main {
     min-height: 100vh;
     padding: 60px 10%;
+
     background:
-        radial-gradient(circle at top right, rgba(255, 15, 123, 0.15), transparent 30%),
-        radial-gradient(circle at bottom left, rgba(0, 255, 157, 0.1), transparent 30%),
-        #090909;
+        linear-gradient(rgba(9, 9, 9, 0.45), rgba(9, 9, 9, 0.45)),
+        url("https://kino.24tv.ua/resources/photos/news/202110/1772149.jpg?v=1661259312000");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Блок інформації */
